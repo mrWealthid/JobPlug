@@ -2,7 +2,7 @@ import React from "react";
 
 const Jobs = ({ myJobs, handleApply, handleDel }) => {
   return (
-    <div className="w-8/12 lg:w-6/12 mx-auto">
+    <div className="w-10/12 md:w-8/12 lg:w-6/12 mx-auto">
       {myJobs.map((jobs) => (
         <div
           className="flex flex-col my-6 p-6 transform hover:scale-110 justify-center rounded-lg shadow-2xl"

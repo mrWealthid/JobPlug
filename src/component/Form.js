@@ -10,7 +10,7 @@ const Form = ({ input, setInput, handleChange, handleSubmit }) => {
   return (
     <div>
       <form
-        className="w-8/12 lg:w-6/12 flex flex-col mx-auto"
+        className="w-10/12 md:w-8/12 lg:w-6/12 flex flex-col mx-auto"
         onSubmit={handleSubmit}
       >
         <p className=" my-3 text-xl font-Poppins font-bold">
