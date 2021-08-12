@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import FirstContext from "../Context/DataContext";
 
-const Jobs = ({ myJobs, handleApply, handleDel }) => {
+const Jobs = () => {
+  const { myJobs, handleApply, handleDel } = useContext(FirstContext);
+
   return (
     <div className="w-10/12 md:w-8/12 lg:w-6/12 mx-auto">
       {myJobs.map((jobs) => (

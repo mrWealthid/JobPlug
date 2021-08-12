@@ -1,11 +1,12 @@
-import React from "react";
-
+import React, { useContext } from "react";
 import InputComp from "./InputComp";
+import FirstContext from "../Context/DataContext";
 
-const Form = ({ input, setInput, handleChange, handleSubmit }) => {
+const Form = () => {
   //   const HandleTitle = (e) => {
   //     setInput(e.target.value);
   //   };
+  const { input, handleChange, handleSubmit } = useContext(FirstContext);
 
   return (
     <div>
